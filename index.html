@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Promise Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Promises in JS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <b><h2>Why Promises?</h2></b>
+        <p>Promises are used to tackle the problem of Callback hell which is created because of using multiple callback functions. </p>
+        <img src="./1.jpg" height="300px" width="800px" >
+    </section>
+
+    
+    
+    <section id="tutorials">
+        <h2>Syntax:</h2>
+        <div class="t">
+            
+            <p>For using a promise, You use a <i>new Promise()</i> constructor. It returns a promise. <i>new Promise()</i> accepts a function. This function have an two arguments <i>resolve and reject</i>. This function calls immediately that’s why we use a <i>setTimeout()</i>. It accepts two arguments a function and time in milliseconds.
+                <b>Note:-</b> resolve and reject are also functions.
+                </p>
+
+                <img src="./2.jpg" alt="" height="300px" width="800px">
+        </div>
+        
+       
+    </section>
+    
+    <section id="resources">
+        <h2>Resolve:</h2>
+        <div class="r">
+           
+            <p>Whenever we get data, we can use this <i>resolve</i> function. We can pass data as an argument within the resolve function. This data is handle by <i>.then()</i> method inside the promise object. All the work that is done by resolve is defined inside .then(). We write a function inside .then() in which we can catch our data and console it.</p>
+            
+            <img src="./3.jpg" alt="" height="300px" width="800px">
+        </div>
+
+        <br>
+        <br>
+        <h2>Reject:</h2>
+        <div class="resource">
+            
+            <p> It is used in the situations where our operation is failed. We can pass our error as an argument inside it. It is used to handle the error in promises. Error can be caught in <i>.catch()</i> method.</p>
+       
+            <img src="./4.jpg" alt="" height="300px" width="800px">
+        </div>
+    </section>
+    
+    <section id="community">
+        <h2>Disadvantage:</h2>
+        
+        
+        <p>If we want to do multiple work after sometime, then it grows vertically that’s we called <i> ‘promise chaining’</i>. So, It arises the issue of promise chaining.</p>
+    
+        <img src="./5.jpg" alt="" height="300px" width="800px">
+    </section>
+
+    <section id="community">
+        <h2>Solution:</h2>
+        
+        
+        <p>For overcome this disadvantage, We use <i>async/await</i> functions, which you can see in our next Blog.</p>
+    
+        <img src="6.jpg.png" alt="" height="400px" width="800px">
+    </section>
+    
+    <footer>
+        <div>
+            <p>&copy; Ishu Goyal</p>
+            <p>All Rights Reserved.</p>
+        </div>
+        <div>
+            <p>Contact Us:</p>
+            
+            <p>
+                Moblie: 9758425558
+                
+            </p>
+            <p>Email : ishu@gmail.com</p>
+        </div>
+
+        <div>
+            <p>Community</p>
+            
+            <p>
+                Web
+               
+            </p>
+            <p></p>
+        </div>
+        
+
+    </footer>
+</body>
+</html>
